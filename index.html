@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinergi Berdampak</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+    <header>
+        <img src="assets/logo.png" alt="Logo Sinergi Berdampak" class="logo">
+        <h1>Sinergi Berdampak</h1>
+        <p>Menuju Pemilihan Raya IKM UI 2024</p>
+    </header>
+
+    <main>
+        <section class="profile">
+            <div class="profile-container">
+                <img src="assets/profile.png" alt="Foto Profil" class="profile-pic">
+                <div class="profile-info">
+                    <h2>Itba' Muhammad Kamil</h2>
+                    <p class="intro">Mahasiswa FIB UI yang siap membawa perubahan melalui visi, misi, dan nilai yang
+                        kuat.</p>
+                    <p class="personal-bio">Saya berkomitmen untuk mewujudkan transparansi, inklusivitas, dan
+                        kesejahteraan mahasiswa FIB UI melalui kebijakan yang responsif dan program kerja yang
+                        berdampak.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="details">
+            <h3>Visi</h3>
+            <p>Membangun sinergitas bermakna antara DPM UI, IKM FIB, dan IKM UI melalui peran representatif proaktif
+                untuk mewujudkan keberdampakan nyata bagi IKM FIB dan IKM UI.</p>
+
+            <h3>Misi</h3>
+            <ul>
+                <li>Mengoptimalkan kembali peran legislatif sebagai representatif IKM dalam mewadahi setiap aspirasi dan
+                    kebutuhan IKM</li>
+                <li>Mendorong tertanamnya sistem Good Corporate Governance demi mewujudkan sistem kerja yang efektif dan
+                    optimal
+                </li>
+                <li>Menciptakan sinergitas antara DPM UI, IKM UI, dan IKM FIB
+                </li>
+                <li>Mendorong terciptanya kebijakan yang relevan dan berdampak nyata bagi IKM FIB dan UI
+                </li>
+                <li>Menciptakan inklusivitas representatif dengan orientasi proaktif
+                </li>
+                <li>Menyediakan informasi yang jelas, transparan, dan aksesibel
+                </li>
+            </ul>
+
+            <h3>Nilai</h3>
+            <p>Sinergitas, Representatif, Berdampak</p>
+        </section>
+
+        <!-- Hubungi Saya Section -->
+        <!-- Ajakan sebelum tombol download -->
+        <!-- Ajakan baru -->
+
+        <div class="cta">
+            <p class="cta-prompt">Unduh Grand Design saya terlebih dahulu untuk memahami lebih lanjut visi dan misi
+                saya!
+            </p>
+            <a href="assets/Rancangan-Besar_Itba-Muhammad-Kamil.pdf" class="btn" download>Download Rancangan Besar</a>
+        </div>
+
+        <!-- Hubungi Saya Section setelah tombol download -->
+        <div id="contact">
+            <h2>Media Sosial</h2>
+            <ul>
+                <li class="social-item" data-social-name="Itba Muhammad Kamil">
+                    <a href="https://www.instagram.com/itbamuhammad_" target="_blank" title="Instagram Pribadi">
+                        <i data-feather="instagram"></i>
+                        <span class="social-name">Itba Muhammad Kamil</span>
+                    </a>
+                </li>
+                <li class="social-item" data-social-name="Sinergi Berdampak">
+                    <a href="https://www.instagram.com/sinergiberdampak" target="_blank" title="Instagram Kampanye">
+                        <i data-feather="instagram"></i>
+                        <span class="social-name">Sinergi Berdampak</span>
+                    </a>
+                </li>
+                <li class="social-item" data-social-name="Itba Muhammad Kamil">
+                    <a href="https://twitter.com/itbamuhammad_" target="_blank" title="Twitter">
+                        <i data-feather="twitter"></i>
+                        <span class="social-name">Itba Muhammad Kamil</span>
+                    </a>
+                </li>
+                <li class="social-item" data-social-name="Itba Muhammad Kamil">
+                    <a href="https://id.linkedin.com/in/itbamuhammad010323" target="_blank" title="LinkedIn">
+                        <i data-feather="linkedin"></i>
+                        <span class="social-name">Itba Muhammad Kamil wefwioe</span>
+                    </a>
+                </li>
+                <li class="social-item" data-social-name="Itba Muhammad Kamil">
+                    <a href="https://www.facebook.com/itbamuhammad.kamil.3/" target="_blank" title="Facebook">
+                        <i data-feather="facebook"></i>
+                        <span class="social-name">Itba Muhammad Kamil</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sinergi Berdampak. All Rights Reserved.</p>
+    </footer>
+    <script>
+        feather.replace(); // Mengganti ikon dengan Feather
+
+        // Memasukkan nama akun ke dalam elemen span
+        document.querySelectorAll('.social-item').forEach(item => {
+            const name = item.getAttribute('data-social-name');
+            item.querySelector('.social-name').innerText = name;
+        });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
